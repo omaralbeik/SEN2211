@@ -17,8 +17,6 @@ public class LinkedList {
     }
 
     public int size() {
-        if (isEmpty())
-            return 0;
         int count = 0;
         Node current = head;
         while (current != null) {
