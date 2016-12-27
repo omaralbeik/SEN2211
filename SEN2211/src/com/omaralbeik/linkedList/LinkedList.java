@@ -98,7 +98,7 @@ public class LinkedList {
         else {
             Node current = head;
             while (current != null) {
-                System.out.println(head.getValue());
+                System.out.println(current.getValue());
                 current = current.getNext();
             }
         }
