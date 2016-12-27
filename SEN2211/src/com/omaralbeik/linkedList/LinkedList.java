@@ -78,6 +78,20 @@ public class LinkedList {
         }
     }
 
+    public Node find(String value) {
+        Node current = head;
+        while (current != null) {
+            if (current.getValue().equals(value))
+                return current;
+            current = current.getNext();
+        }
+        return null; // no result was found.
+    }
+
+    public boolean contains(String value) {
+        return find(value) != null;
+    }
+
     public void outputList() {
         if (isEmpty())
             System.out.println("List is empty!");
