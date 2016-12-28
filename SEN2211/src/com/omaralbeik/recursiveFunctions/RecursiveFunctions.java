@@ -30,7 +30,7 @@ public class RecursiveFunctions {
         }
     }
 
-    public static int countOddsInRange(int[] a, int lowerIndex, int upperIndex)  {
+    public static int countOddsInRange(int[] a, int lowerIndex, int upperIndex) {
         int count = 0;
         if (lowerIndex <= upperIndex) {
             count += countOddsInRange(a, lowerIndex + 1, upperIndex);
@@ -41,7 +41,7 @@ public class RecursiveFunctions {
         return count;
     }
 
-    public static int countEvensInRange(int[] a, int lowerIndex, int upperIndex)  {
+    public static int countEvensInRange(int[] a, int lowerIndex, int upperIndex) {
         int count = 0;
         if (lowerIndex <= upperIndex) {
             count += countEvensInRange(a, lowerIndex + 1, upperIndex);
@@ -54,15 +54,17 @@ public class RecursiveFunctions {
 
     public int occurrenceTimesForNumberInRange(int number, int[] a, int lowerIndex, int upperIndex) {
         int count = 0;
-        count += occurrenceTimesForNumberInRange(number, a, lowerIndex + 1, upperIndex);
-        if (a[lowerIndex] == number) {
-            count++;
+        if (lowerIndex <= upperIndex) {
+            count += occurrenceTimesForNumberInRange(number, a, lowerIndex + 1, upperIndex);
+            if (a[lowerIndex] == number) {
+                count++;
+            }
         }
         return count;
     }
 
     public static int sum(int number) {
-        return (number == 1) ? 1 : number + sum(number - 1);
+        return (number == 1) ? 1 : number /* base case */ + sum(number - 1);
     }
 
     public int primes(int x, int i)
