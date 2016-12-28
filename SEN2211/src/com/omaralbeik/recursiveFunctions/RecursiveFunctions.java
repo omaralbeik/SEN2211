@@ -10,24 +10,55 @@ public class RecursiveFunctions {
         return n * factorial(n-1);
     }
 
-    public static int greatest(int x[], int lowerIndex, int upperIndex) {
+    public static int greatestInRange(int a[], int lowerIndex, int upperIndex) {
         int max;
         if (lowerIndex == upperIndex)
-            return x[lowerIndex];
+            return a[lowerIndex];
         else {
-            max = greatest(x, lowerIndex + 1, upperIndex);
-            return (x[lowerIndex] >= max) ? x[lowerIndex] : max;
+            max = greatestInRange(a, lowerIndex + 1, upperIndex);
+            return (a[lowerIndex] >= max) ? a[lowerIndex] : max;
         }
     }
 
-    public static int smallest(int x[], int lowerIndex, int upperIndex) {
+    public static int smallestInRange(int a[], int lowerIndex, int upperIndex) {
         int min;
         if (lowerIndex == upperIndex)
-            return x[lowerIndex];
+            return a[lowerIndex];
         else {
-            min = smallest(x, lowerIndex + 1, upperIndex);
-            return (x[lowerIndex] <= min) ? x[lowerIndex] : min;
+            min = smallestInRange(a, lowerIndex + 1, upperIndex);
+            return (a[lowerIndex] <= min) ? a[lowerIndex] : min;
         }
+    }
+
+    public static int countOddsInRange(int[] a, int lowerIndex, int upperIndex)  {
+        int count = 0;
+        if (lowerIndex <= upperIndex) {
+            count += countOddsInRange(a, lowerIndex + 1, upperIndex);
+            if(a[lowerIndex] % 2 != 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int countEvensInRange(int[] a, int lowerIndex, int upperIndex)  {
+        int count = 0;
+        if (lowerIndex <= upperIndex) {
+            count += countEvensInRange(a, lowerIndex + 1, upperIndex);
+            if(a[lowerIndex] % 2 == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public int occurrenceTimesForNumberInRange(int number, int[] a, int lowerIndex, int upperIndex) {
+        int count = 0;
+        count += occurrenceTimesForNumberInRange(number, a, lowerIndex + 1, upperIndex);
+        if (a[lowerIndex] == number) {
+            count++;
+        }
+        return count;
     }
 
     public static int sum(int number) {
