@@ -26,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/omaralbeik/queue/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
@@ -40,6 +40,19 @@
                 <element signature="e#1328#1329#0" expanded="true" />
                 <element signature="e#1365#1366#0" expanded="true" />
                 <element signature="e#1397#1398#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecursiveFunctions.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/omaralbeik/recursiveFunctions/RecursiveFunctions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/com/omaralbeik/stack/Stack.java" />
         <option value="$PROJECT_DIR$/src/com/omaralbeik/stack/LinkedListStack.java" />
         <option value="$PROJECT_DIR$/src/com/omaralbeik/queue/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/omaralbeik/recursiveFunctions/RecursiveFunctions.java" />
       </list>
     </option>
   </component>
@@ -146,6 +160,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="omaralbeik" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SEN2211" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SEN2211" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omaralbeik" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recursiveFunctions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -741,6 +777,17 @@
             <element signature="e#1328#1329#0" expanded="true" />
             <element signature="e#1365#1366#0" expanded="true" />
             <element signature="e#1397#1398#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/omaralbeik/recursiveFunctions/RecursiveFunctions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
           </folding>
         </state>
       </provider>
