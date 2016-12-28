@@ -36,7 +36,7 @@ public class OrderedLinkedList {
                     newNode.setNext(current);
                     break;
                 }
-            } else if (current == tail) {
+            } else if (current == tail) { // insert after tail
                 tail.setNext(newNode);
                 newNode.setNext(null);
                 tail = newNode;
